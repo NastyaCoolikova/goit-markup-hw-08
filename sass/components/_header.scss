@@ -133,6 +133,10 @@
         line-height: 22px;
         letter-spacing: 0.02em;
         color: #2196f3;
+
+        @media screen and (max-width: 390px) {
+          font-size: 14px;
+        }
       }
       border-left: 1px solid rgba(33, 33, 33, 0.2);
       padding: 0 10px;

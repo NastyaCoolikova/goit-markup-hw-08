@@ -287,6 +287,11 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+@media screen and (max-width: 390px) {
+  .header .nav-social li a {
+    font-size: 14px;
+  }
+}
 .header .nav-social li:first-child {
   border-left: 0;
   padding-left: 0;
