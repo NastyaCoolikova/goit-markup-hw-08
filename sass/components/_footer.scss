@@ -3,14 +3,14 @@
   background: #2f303a;
   padding: 60px 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 
   &__logo {
     color: #ffffff;
   }
-  
+
 
   .list {
     color: $primary-bg-color;
@@ -34,7 +34,7 @@
   }
 
   .footer-icons {
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 1200px) {
       margin-left: 70px;
     }
 
@@ -42,15 +42,16 @@
       @media screen and (max-width: 480px) {
         padding-bottom: 0;
       }
+
       li {
         a {
           background-color: rgba(255, 255, 255, 0.1);
           transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+
           svg {
             fill: #fff;
           }
-    
+
           &:hover,
           &:focus {
             background-color: $accent-colour;
@@ -61,13 +62,14 @@
     }
   }
 
-  @media screen and (min-width: 481px) and (max-width: 767px) {
+  @media screen and (min-width: 481px) and (max-width: 1199px) {
+
     &__details,
-    .footer-icons{
+    .footer-icons {
       flex: 1 0 50%;
     }
 
-    .footer-icons{
+    .footer-icons {
       margin-left: 0;
     }
   }
@@ -77,39 +79,42 @@
     font-weight: 700px;
     text-transform: uppercase;
     color: #fff;
-    margin-top: 12px;
+    margin-top: 60px;
+
     margin-bottom: 20px;
-    @media screen and (max-width: 480px) {
-      margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 12px;
     }
   }
 
   .container {
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
     }
   }
 
   .subscription-wrap {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
       margin-left: 92px;
     }
 
-    @media screen and (min-width: 481px) and (max-width: 767px) {
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
       margin-top: 60px;
       width: 100%;
     }
 
-    &__form{
-      @media screen and (min-width: 768px) {
+    &__form {
+      @media screen and (min-width: 1200px) {
         display: flex;
       }
 
       button {
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1199px) {
           margin-top: 20px;
         }
+
         .icon-send {
           width: 24px;
           height: 24px;
@@ -121,7 +126,7 @@
       }
 
       input {
-        
+
         &,
         &:focus {
           width: 100%;
@@ -139,12 +144,12 @@
           margin-right: 12px;
         }
 
-        @media screen and (min-width: 481px) and (max-width: 767px) {
-          width: 450px;
-          margin-left: auto;
-          margin-right: auto;
-          display: block;
-        }
+        // @media screen and (min-width: 481px) and (max-width: 1199px) {
+        //   width: 450px;
+        //   margin-left: auto;
+        //   margin-right: auto;
+        //   display: block;
+        // }
       }
     }
   }

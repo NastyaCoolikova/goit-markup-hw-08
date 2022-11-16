@@ -3,7 +3,7 @@
   padding: 200px 0;
   text-align: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     padding: 125px 0;
   }
 
@@ -38,7 +38,7 @@
   }
   }
   .hero-inner {
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 767px) {
       padding: 0 20%;
     }
     
@@ -46,13 +46,15 @@
   .hero-title {
     color: $primary-bg-color;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
+  
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
-    @media screen and (max-width: 767px) {
-      font-size: 26px;
+    
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
     }
   }
 }
